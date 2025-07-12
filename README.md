@@ -49,6 +49,12 @@ num을 sum으로 나눴을때 0이 아니라면 answer = false를 대입한다.
 
 ## A027. 큰 수 만들기
 ![A027](./captures/A027.png)
+string number에서 한개씩 꺼내서, 
+push하기전에, string answer이 비어있지않고, 맨뒤에 있는 char값이 현재 char값보다 작은경우, 
+k가 0보다 큰 경우에는 pop_back를 하고 k를 1감소한다. 
+answer.push_back한다. 
+8765처럼 앞에 자릿수가 무조건 더 커서 k를 하나도 감소시키지 못하고 push만 한경우에는
+맨 뒤에가 가장 작은수이기에 뒤에서부터 k만큼 pop_back한다. 
 
 ## A028. 큰 수 A+B
 ![A028](./captures/A028.png)
