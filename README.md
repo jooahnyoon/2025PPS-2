@@ -74,4 +74,9 @@ string a, b를 비교해서 둘을 더할려면 일단 자릿수를 맞춰야한
 
 ## A030 좋은 날 싫은 날
 ![A030](./captures/A030.png)  
-       
+시작이 좋은 날, good = 1.0, bad = 0.0
+시작이 나쁜 날, good = 0.0, bad = 1.0로 초기화한다.
+공식 사용.
+new_good = good * n1 + bad * n3; (good에 해당)
+new_bad = good * n2 + bad * n4; (bad에 해당)
+출력은 1000을 곱하고 0.5를 더해줌으로써 반올림이 되도록 한다. 
