@@ -97,6 +97,10 @@ sum을 반환한다.
 
 ## A033 나는 요리사다
 ![A033](./captures/A033.png)  
+max값을 0, max값을 갖는 index도 0으로 초기화한다. 
+각 참가자별로 총점을 구해서 num[i]에 집어넣는다. 
+만약 num[i]가 max보다 크면 max = num[i]를 대입, max_i = i를 집어넣는다. 
+i는 0부터 시작하기에 number 출력할때 1을 더해서 출력한다. 
 
 ## A034 나머지
 ![A034](./captures/A034.png)  
