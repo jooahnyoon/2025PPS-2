@@ -80,3 +80,41 @@ string a, b를 비교해서 둘을 더할려면 일단 자릿수를 맞춰야한
 new_good = good * n1 + bad * n3; (good에 해당)
 new_bad = good * n2 + bad * n4; (bad에 해당)
 출력은 1000을 곱하고 0.5를 더해줌으로써 반올림이 되도록 한다. 
+
+## A031 초콜릿 자르기
+![A031](./captures/A031.png)  
+공식만 찾으면 된다. 
+n, m을 입력받고 
+n에 m을 곱하고 1을 뺀값을 출력한다. 
+
+## A032 부녀회장이 될테야
+![A032](./captures/A032.png)
+예를 들어 2층 3호를 찾는다면 (1층1호+1층2호+1층3호)이기에
+역순으로 돌아가는 것라서 recursive을 사용해야겠다는 생각이 들었다.
+k가 0이면 i호에 i명이기에 return n을 한다. 
+k-1호의 i번째를 i를 계속 1씩 증가하면서 sum에 추가한다. 
+sum을 반환한다. 
+
+## A033 나는 요리사다
+![A033](./captures/A033.png)  
+
+## A034 나머지
+![A034](./captures/A034.png)  
+
+## A035 화성 수학
+![A035](./captures/A035.png)  
+
+## A036 좋은
+![A036](./captures/A036.png)  
+
+## A037 좋은
+![A037](./captures/A037.png)  
+
+## A038 좋은
+![A038](./captures/A038.png)  
+
+## A039 좋은
+![A039](./captures/A039.png)  
+
+## A040 좋은
+![A040](./captures/A040.png)  
