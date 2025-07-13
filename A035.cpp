@@ -1,32 +1,42 @@
 #include <iostream>
+#include <string>
+#include <sstream>
 #include <algorithm>
+#include <iomanip>
+
 using namespace std;
 
-class Solution{
-public:
-    int findNum(int k, int n){
-        if(k == 0){
-            return n;
-        }
-        int sum = 0;
-        for(int i=1;i<=n;++i){
-            sum += findNum(k-1, i);
-        }
-       return sum;
-    }
-};  
-
 int main(){
-    Solution run;
+    string line;
     int count;
+    char n;
+    double num;
     cin >> count;
-    int k[count];
-    int n[count];
+    cin.ignore();
+    double number[count];
+
     for(int i=0;i<count;++i){
-        cin >> k[i] >> n[i];
+        getline(cin, line);
+        istringstream iss(line);
+        iss >> num;
+        while(iss >> n){
+            if(n == '@'){
+                num *= 3;
+            }
+            else if(n == '%'){
+                num += 5;
+            }
+            else if(n == '#'){
+                num -= 7;
+            }
+            else{
+                cout << "enter a wrong char" << endl;
+            }
+        }
+        number[i] = num;
     }
-    for(int i=0;i<count;++i){
-       cout << run.findNum(k[i], n[i]) << endl;
+    for(int j=0;j<count;++j){
+        cout << fixed << setprecision(2) << number[j] << endl;
     }
     return 0;
 }
