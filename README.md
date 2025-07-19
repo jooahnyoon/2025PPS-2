@@ -111,19 +111,54 @@ count을 출력한다.
 
 ## A035 화성 수학
 ![A035](./captures/A035.png)  
+istringstream을 사용하여 공백을 기준으로 값을 입력받는다. 입력받은 값이 @, %, #에 따라
+num을 계산하고 출력한다. fixed << setprecision(2)를 사용하여 소수점 둘째자리까지 출력한다. 
 
+## A102 Transpose Matrix
+![A102](./captures/A102.png)  
+']'를 기준으로 row를 잘라서 rowStr에 저장한다. rowStr에 마지막으로 나타난 '['의 위치를 idx에 저장한다. 
+idx +1을 하여 '[' 다음에 오는 문자열을 잘라낸다. 숫자로 읽기 위해 stream으로 바꾸고 숫자를 하나씩 읽어들여서 row에 push한다. 
+함수에서는 2중 배열이므로, matrix.size()를 row로, 첫번째 배열의 size를 col로 하여 matrix 배열을 읽어들이고, 
+result에 col와 row를 반대로 하여 저장시킨다. 
 
-## A036 좋은
-![A036](./captures/A036.png)  
+## A104 욱제는 효도쟁이야!!
+![A104](./captures/A104.png)  
 
-## A037 좋은
-![A037](./captures/A037.png)  
+## A105 분수찾기
+![A105](./captures/A105.png)  
 
-## A038 좋은
-![A038](./captures/A038.png)  
+## A107 쉽게 푸는 문제
+![A107](./captures/A107.png)  
 
-## A039 좋은
-![A039](./captures/A039.png)  
+## A108 수 뒤집기
+![A108](./captures/A108.png) 
 
-## A040 좋은
-![A040](./captures/A040.png)  
+## A110 거스름돈
+![A110](./captures/A110.png) 
+
+## A115 Maximum Number of Balloons
+![A115](./captures/A115.png) 
+
+## A118 Move Zeros
+![A118](./captures/A118.png) 
+
+## A122 Rotate String
+![A122](./captures/A122.png) 
+
+## A123 1로 만들기
+![A123](./captures/A123.png) 
+
+## A124 소인수분해
+![A124](./captures/A124.png) 
+
+## A126 한수
+![A126](./captures/A126.png) 
+
+## A127 최소공배수
+![A127](./captures/A127.png) 
+
+## A130 제로
+![A130](./captures/A130.png) 
+
+## A135 베스트셀러
+![A135](./captures/A135.png) 
