@@ -211,6 +211,12 @@ result를 a와 b로 나누었을때 모두 나누어떨어지는 경우 result�
 
 ## A130 제로
 ![A130](./captures/A130.png) 
+입력받은 수를 vector<int>g로 모두 함수에 보내준다.
+새로운 vector<int>result를 만들고
+nums[i]가 0이면 result의 맨 뒤의 자리를 pop시킨다. 
+0이 아니면 현재 nums[i]를 result에 push_back한다. 
+새롭게 만들어진 result의 원소를 하나씩 꺼내서 
+sum에 더한다. sum을 출력한다. 
 
 ## A135 베스트셀러
 ![A135](./captures/A135.png) 
