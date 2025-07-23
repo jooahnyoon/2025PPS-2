@@ -220,3 +220,8 @@ sum에 더한다. sum을 출력한다.
 
 ## A135 베스트셀러
 ![A135](./captures/A135.png) 
+map<string, int>m을 사용하여 string이름과 빈도수가 한쌍으로 묶이도록 한다. 
+g에서 한개씩 꺼내서 strign s에 집어넣은후 m[s]의 빈도수를 1씩 증가시킨다. 
+max값과 max_name을 초기화한후, m을 한개씩 확인해보며 빈도수 p.second값이 max보다 크면
+max값을 p.second로 바꾸고, max_name에는 p.first 즉, string값을 집어넣는다. 
+마지막으로 가장 높은 빈도수를 가진 max_name을 출력한다. 
