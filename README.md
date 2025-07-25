@@ -242,25 +242,27 @@ target을 계산할때는 문자를 index로 변환하고, keymap에 존재하�
 누르는 횟수는 total에 minPress[idx]를 계속해서 더해주고 최종적으로 push_back한다. 
 keymap에 없는 문자가 target에 있으면 -1을 push_back한다. 
 
-## A163 개인정보 수집 유효기간
-![A163](./captures/A163.png) 
-
-
-## A164 가장 가까운 글자
-![A164](./captures/A164.png) 
-
-## A165 기삭단원의 무기
-![A165](./captures/A165.png) 
-
 ## A166 크기가 작은 부분 문자열
 ![A166](./captures/A166.png) 
+t와 p를 입력받되 맨 앞뒤 "를 t.erase(0,1) 그리고 t.pop_back으로 지운다. 
+p_len으로 p의 length를 입력받고, t를 i부터 p_len까지 substr하여서 계속해서 비교한다.
+숫자 나열순과 ascii code순이 같기에 int로 변환하지 않고 string을 그대로 비교해도 괜찮다. 
+비교해서 p보다 작거나 같으면 answer를 1 증가한다. 최종적으로 answer를 출력한다. 
 
 ## A172 삼총사
-![A172](./captures/A172.png) 
+![A172](./captures/A172.png)
+string으로 입력받고, int n과 while(iss >> n)을 사용하여 string을 int로 전환하여 push_back한다.
+3개의 합이 0인지를 판별하기 위해 첫번째 원소 i, 두변째 원소는 i보다 1개 큰 j, 세번째 원소는 j보다 1개 큰 k에서 시작해서 중복없이 모든 경우의 수를 확인하는 3중 루프이다. 합이 0이면 answer를 증가하고,
+최종적으로 answer를 출력한다. 
+
+## A173 없는 숫자 더하기
+![A173](./captures/A173.png) 
+아이디어는 a[10] = {0};으로 하고, numbers[i]값을 a의 index값으로 받아서
+값이 존재하는 경우 a[numbers[i]]++한다. 최종적으로 array a를 확인하여 값이 0인경우
+answer에 i를 더한다. answer를 출력한다. 
 
 ## A174 명예의 전당(1)
 ![A174](./captures/A174.png) 
-
 
 
 ## A175 옹알이(2)
