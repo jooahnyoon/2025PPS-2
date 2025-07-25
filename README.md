@@ -225,3 +225,55 @@ g에서 한개씩 꺼내서 strign s에 집어넣은후 m[s]의 빈도수를 1�
 max값과 max_name을 초기화한후, m을 한개씩 확인해보며 빈도수 p.second값이 max보다 크면
 max값을 p.second로 바꾸고, max_name에는 p.first 즉, string값을 집어넣는다. 
 마지막으로 가장 높은 빈도수를 가진 max_name을 출력한다. 
+
+## A145 부족한 금액 계산하기  
+![A145](./captures/A145.png) 
+사용자의 부족한 금액 answer는 
+price를 i가 1일때 곱한값, 2일때 곱한값 ... count일때까지 곱한값을 더해주고
+money를 뺀값을 출력하면 된다. 
+answer가 money와 동일하면 동일한 값을 뺐으므로 0이 출력될 것이다. 
+
+## A161 대충만든 자판
+![A161](./captures/A161.png) 
+입력받을때 [ ] "가 나오면 공백을 대입한후, stringstream처리하도록 한다.
+처음에 공백이 아닌경우, 마지막에 공백이 아닌경우 둘은 판별하여 string w로 받아서 push_back
+최소 횟수 minPress[i], i+1번 눌러야 입력 가능하기에 minPress[idx] = min(minPress[idx], i + 1);
+target을 계산할때는 문자를 index로 변환하고, keymap에 존재하는 문자인지 판별한다. 
+누르는 횟수는 total에 minPress[idx]를 계속해서 더해주고 최종적으로 push_back한다. 
+keymap에 없는 문자가 target에 있으면 -1을 push_back한다. 
+
+## A163 개인정보 수집 유효기간
+![A163](./captures/A163.png) 
+
+
+## A164 가장 가까운 글자
+![A164](./captures/A164.png) 
+
+## A165 기삭단원의 무기
+![A165](./captures/A165.png) 
+
+## A166 크기가 작은 부분 문자열
+![A166](./captures/A166.png) 
+
+## A172 삼총사
+![A172](./captures/A172.png) 
+
+## A174 명예의 전당(1)
+![A174](./captures/A174.png) 
+
+
+
+## A175 옹알이(2)
+![A175](./captures/A175.png) 
+
+## A176 나머지가 1이 되는 숫자 구하기
+![A176](./captures/A176.png) 
+
+## A183 고양이
+![A183](./captures/A183.png) 
+
+## A184 개
+![A184](./captures/A184.png) 
+
+## A192 합
+![A192](./captures/A192.png) 
