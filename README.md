@@ -350,37 +350,48 @@ max = 0으로 두고, a1과 a2를 비교하여 더 큰 값을 max에 대입한�
 a3가 max보다 크면 max에 a3를 대입하고 max * 100을 출력한다. 
 
 ## A192 합
-![A187](./captures/A187.png) 
+![A192](./captures/A192.png) 
 sum = 0으로 초기화한다. 
 n을 입력받고 i는 1부터 n이 될때까지 1씩 증가하면서
 sum에 i를 더해준다. sum을 출력한다. 
 
 ## A193 코딩은 체육과목입니다
-![A187](./captures/A187.png) 
+![A193](./captures/A193.png) 
+"long "출력횟수는 입력받은 수 n을 4로 나눈 값이다. 
+n을 4로 나누고 그 횟수만큼 long을 for반복문을 사용하여 출력한다.
+마지막으로 "int"를 출력한다. 
 
 ## A195 별 찍기 - 1
-![A187](./captures/A187.png) 
+![A195](./captures/A195.png) 
+전체 반복횟수는 사용자에게 입력받은 n번이기에 for반복문으로 i는 1부터 n이 될때까지 반복한다.
+내부적으로 "*"출력횟수는 현재 줄 index i와 동일하기에 내부에 for문을 사용하여 j가 i이 될때까지
+반복한다. 내부 for문이 끝난후에는 줄바꿈을 위해 endl을 출력한다. 
 
 ## A196 개수 세기 
-![A187](./captures/A187.png) 
+![A196](./captures/A196.png) 
+제한조건을 확인하기 위해 while문을 사용하여 n은 1보다 작거나 100보다 큰경우에 해당하면 
+계속해서 n을 입력받도록 하였다. 입력받은후, 정수를 저장할 arr[n]을 선언하고, v와 같은지 확인할
+count를 0으로 초기화한다. v또한 -100보다 작거나, 100보다 큰경우에 해당하면 계속해서 사용자에게
+v를 입력받도록 한다. for반복문을 i는 0부터 n까지 범위에서 확인하며 v가 arr[i]와 같은 경우 
+count를 1증가하고 최종적으로 반복문을 빠져나왔을때 count를 출력한다. 
 
 ## A197 공 바꾸기 
-![A187](./captures/A187.png) 
+![A197](./captures/A197.png) 
 
 ## A198 파닭파닭 
-![A187](./captures/A187.png) 
+![A198](./captures/A198.png) 
 
 ## A199 별 찍기 - 20
-![A187](./captures/A187.png) 
+![A199](./captures/A199.png) 
 
 ## A200 돌 게임 2
-![A187](./captures/A187.png) 
+![A200](./captures/A200.png) 
 
 ## A201 단어 뒤집기 2
-![A187](./captures/A187.png) 
+![A201](./captures/A201.png) 
 
 ## A202 후위 표기식2
-![A187](./captures/A187.png) 
+![A202](./captures/A202.png) 
 
 ## A202 후위 표기식2
 ![A187](./captures/A187.png) 
